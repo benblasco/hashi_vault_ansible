@@ -19,8 +19,16 @@ The instructions below show you how to test pulling a secret from Hashicorp vaul
 
 ### Edit your Ansible variables to add the Vault login parameters
 
-1. Open the Ansible playbook variables file `vault_vars.yml` with your favourite editor, e.g. vim
-2. Update the following variables to match your configuration, e.g.
+1. Clone this repo on your host e.g.
+```
+git clone https://github.com/benblasco/hashi_vault_ansible.git
+```
+2. Enter the directory where you have cloned the repo, e.g.
+```
+cd hashi_vault_ansible
+```
+3. Open the Ansible playbook variables file `vault_vars.yml` with your favourite editor, e.g. vim
+4. Update the following variables to match your configuration, e.g.
 ```
 vault_ip: "192.168.1.6"
 vault_port: "8200"
@@ -28,9 +36,9 @@ vault_token: "hvs.VqkfOJJxq81T733Vqh2Gw2Vl"
 secret_path: "secret/data/mynewsecret"
 ```
 
-3. Save and quit
+5. Save and quit
 
-4. If required, edit the playbook itself to refer to the correct host that will contact Vault, e.g.
+6. If required, edit the playbook itself to refer to the correct host that will contact Vault, e.g.
 ```
 - hosts: localhost
 ```
