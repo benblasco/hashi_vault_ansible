@@ -1,5 +1,5 @@
 ---
-vault_ip: "micro.lan"
+vault_ip: "HOST IP OR DNS NAME"
 vault_port: "8200"
 # This is the root token
 vault_token: "INSERT YOUR VAULT TOKEN HERE"
